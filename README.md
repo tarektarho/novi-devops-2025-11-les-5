@@ -1,8 +1,17 @@
 # Les 5 - CD-Ready Pipeline
 
-![CI](https://github.com/erikkasimier/novi-devops-2025-11-les-5/actions/workflows/ci.yml/badge.svg)
+![CI/CD Pipeline](https://github.com/tarektarho/novi-devops-2025-11-les-5/actions/workflows/ci.yml/badge.svg)
 
 ## Quick Start
+
+```bash
+
+# Pull de image
+docker pull ghcr.ic/tarektarho/novi-devops-2025-11-les-5:latest
+
+# Run de container
+docker run -p 3000:3000 ghcr.io/tarektarho/novi-devops-2025-11-les-5:latest
+```
 
 ### Lokaal draaien
 
