@@ -1,8 +1,5 @@
 # Les 5 - CD-Ready Pipeline
 
-<!-- TODO: Voeg hier je CI badge toe -->
-<!-- ![CI](https://github.com/JOUW-USERNAME/JOUW-REPO/actions/workflows/ci.yml/badge.svg) -->
-
 ![CI](https://github.com/erikkasimier/novi-devops-2025-11-les-5/actions/workflows/ci.yml/badge.svg)
 
 ## Quick Start
