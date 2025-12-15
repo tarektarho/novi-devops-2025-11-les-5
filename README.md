@@ -1,6 +1,7 @@
 # Les 5 - CD-Ready Pipeline
 
 ![CI/CD Pipeline](https://github.com/tarektarho/novi-devops-2025-11-les-5/actions/workflows/ci.yml/badge.svg)
+![Tag](https://img.shields.io/github/v/tag/tarektarho/novi-devops-2025-11-les-5)
 
 ## Quick Start
 
