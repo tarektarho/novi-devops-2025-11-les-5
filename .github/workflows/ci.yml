@@ -31,11 +31,16 @@ jobs:
 
   # Job 2: Bouwen (wacht op test)
   build:
-    needs: test # 👈 BELANGRIJK: wacht tot test klaar is
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Build Docker image
-        run: docker build -t myapp:${{ github.sha }} .
+        run: |
+          docker build -t ghcr.io/${{ github.repository }}:${{ github.sha }} .
+          docker tag ghcr.io/${{ github.repository }}:${{ github.sha }} ghcr.io/${{ github.repository }}:latest
+
+      - name: List images
+        run: docker images

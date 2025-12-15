@@ -28,7 +28,7 @@ COPY src ./src/
 
 # Maak non-root user voor security
 RUN addgroup -g 1001 -S nodejs && \
-    adduser -S nodejs -u 1001 -G nodejs
+  adduser -S nodejs -u 1001 -G nodejs
 
 USER nodejs
 
@@ -40,4 +40,4 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
   CMD wget --no-verbose --tries=1 --spider http://localhost:3000/health || exit 1
 
 # Start de applicatie
-CMD ["node", "src/index.js"]
+CMD ["npm", "start"]
